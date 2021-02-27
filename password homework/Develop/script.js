@@ -16,6 +16,9 @@ function getLower(){
 function getNumber(){
   return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 }
-
+function getRandomSymbol(){
+  var symbol = "!@#$%^&*(){}[]=<>/,.|~?";
+  return symbol[Math.floor(Math.random()*symbol.length)];
+}
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
