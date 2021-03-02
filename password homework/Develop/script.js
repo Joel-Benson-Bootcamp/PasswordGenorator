@@ -33,29 +33,29 @@ function generatePassword(charset) {
     return password; 
 }
 // character variables are down here so they will load after an error message in the event of user inputing a value not between 8-128
-var lowercase = prompt("Would you like lowercase letters?");  
-    if (lowercase == "yes") {
+var lowercase = prompt("Would you like lowercase letters? (Y/N)");  
+    if (lowercase == "Y") {
       lowercase = true; 
     } else {
       lowercase = false; 
     }
 
-var uppercase = prompt("Would you like uppercase letters?"); 
-    if (uppercase == "yes") {
+var uppercase = prompt("Would you like uppercase letters? (Y/N)");  
+    if (uppercase == "Y") {
       uppercase = true; 
     } else {
       uppercase = false; 
     }
 
-var special = prompt("Would you like special characters?"); 
-    if (special == "yes") {
+var special = prompt("Would you like special characters? (Y/N)"); 
+    if (special == "Y") {
       special = true; 
     } else {
       special = false; 
     }
     
-var numeric = prompt("Would you like numbers?");
-    if (numeric == "yes") {
+var numeric = prompt("Would you like numbers? (Y/N)");
+    if (numeric == "Y") {
       numeric = true; 
     } else {
       numeric = false; 
