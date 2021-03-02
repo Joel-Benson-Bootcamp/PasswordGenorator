@@ -19,6 +19,19 @@ function confirmLength() {
 confirmLength (); 
 
 
+// password gen function
+function generatePassword(charset) { 
+  charset = charset.toString(); 
+  console.log(charset, "charset"); 
+       var password = "";
+      for (var i = 0; i < passwordLength; i++) {
+      var randomNumber = Math.floor(Math.random() * charset.length);  
+        password = password + charset[randomNumber]; 
+        console.log(password); 
+        console.log(randomNumber); 
+    } 
+    return password; 
+}
 
 // Write password to the #password input
 function writePassword() {
